@@ -29,6 +29,7 @@
                     <li><a href="travels.php">Seyahatler</a></li>
                     <li><a href="contact.php">İletişim</a></li>
                 </ul>
+                <a><img src="images/bar.png" class="bar"></a>
                 <img src="images/moon.png" id="icon" alt="">
             </nav>
             <script>
@@ -47,7 +48,7 @@
             <div class="class1">
                 <section class="about" id="about" data-aos="fade-up">
                     <div class="article">
-                        <hr>
+                        <hr class="b">
                         <div><a href="about1.php" class="active">Vizyon ve Misyonumuz</a></div>
                         <div><a href="about2.php">Seyahat Rehberi</a></div>
                         <div><a href="about3.php">Gereklilikler</a></div>

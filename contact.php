@@ -45,6 +45,7 @@
                     <li><a href="travels.php">Seyahatler</a></li>
                     <li><a href="contact.php" class="active">İletişim</a></li>
                 </ul>
+                <a><img src="images/bar.png" class="bar"></a>
                 <img src="images/moon.png" id="icon" alt="">
             </nav>
             <script>

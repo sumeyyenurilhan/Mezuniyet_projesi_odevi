@@ -25,12 +25,14 @@
         <header class="header">
             <nav class="nav">
                 <a href="home.php" aria-label="home"><img src="images/logo.png" class="logo" alt=""></a>
+                
                 <ul>
                     <li><a href="home.php" class="active">Ana Sayfa</a></li>
                     <li><a href="about1.php">Hakkımızda</a></li>
                     <li><a href="travels.php">Seyahatler</a></li>
                     <li><a href="contact.php">İletişim</a></li>
                 </ul>
+                <a><img src="images/bar.png" class="bar"></a>
                 <img src="images/moon.png" id="icon" alt="">
             </nav>
             <script>
@@ -46,23 +48,15 @@
             </script>
             <div class="home">
                 <div class="home-box">
-                    <?php 
-                        $sorgu = $baglan->query("select * from anasayfa_kayanp");
-                        while ($satir = $sorgu->fetch_object()) {
-                        $dosya = substr($satir->dosya,3);
-                        echo "
-                            <video src='$dosya' muted autoplay loop class='slider active'></video>";}?>
-                            <img src="images/gemi.jpg" class="slider" alt="">
-                            <video src="images/ucak.mp4" muted autoplay loop class="slider"></video>
-                    <?php
-                    $sorgu = $baglan->query("select * from anasayfa_kayanp");
-                    while ($satir = $sorgu->fetch_object()) {
-                    echo "
-                    <div class='content' data-aos='fade-up'>
-                        <h1>$satir->baslik</h1>
-                        <p>$satir->yazi</p>
-                        <a href='travels.php' class='btn'>İncele</a>
-                    </div>";}?>
+                <video src="images/tacmahal.mp4" muted autoplay loop class="slider active"></video>
+                <img src="images/gemi.jpg" class="slider" alt="">
+                <video src="images/ucak.mp4" muted autoplay loop class="slider"></video>
+                    <div class="content active" data-aos="fade-up">
+                        <h1>Hindistan Ziyaretimiz Yakında</h1>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                            to using 'Content here, content here', making it look like readable English.</p>
+                        <a href="travels.php" class="btn">İncele</a>
+                    </div>
                     <div class="content" data-aos="fade-up">
                         <h1>Okyanus Seyahatlerimiz</h1>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
@@ -140,16 +134,17 @@
                     <hr class="hr">
                 </h1>
                 <div class="container" data-aos="fade-up">
-                    <?php
-                        $sorgu = $baglan->query("select * from anasayfa_gezig");
-                        while ($satir = $sorgu->fetch_object()) {
-                        $resim = substr($satir->resim,3);
-                        echo "
-                        <div class='box'>
-                            <img class='icon' src='$resim' alt=''>
-                            <h3>$satir->baslik</h3>
-                            <p>$satir->yazi</p>
-                        </div>";}?>
+                <?php
+                    $sorgu = $baglan->query("select * from anasayfa_gezig");
+                    while ($satir = $sorgu->fetch_object()) {
+                    $resim = substr($satir->resim,3);
+                    echo "
+                    <div class='box'>
+                        <img class='icon' src='$resim' alt=''>
+                        <h3>$satir->baslik</h3>
+                        <p>$satir->yazi</p>
+                    </div>";
+                }?>
                 </div>
             </section><br><br>
             <section class="works">
@@ -158,16 +153,16 @@
                 </h1>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper" data-aos="fade-up">
-                        <?php
-                            $sorgu = $baglan->query("select * from anasayfa_slider");
-                            while ($satir = $sorgu->fetch_object()) {
-                            $resim = substr($satir->resim,3);
-                            echo "
-                                <div class='swiper-slide'>
-                                    <h2>$satir->baslik</h2>
-                                    <img src='$resim' id='zoom'>
-                                    <a href='travels.php'><input type='submit' value='İncele' name='see' class='btn'></a>
-                                </div>";}?>
+                    <?php
+                        $sorgu = $baglan->query("select * from anasayfa_slider");
+                        while ($satir = $sorgu->fetch_object()) {
+                        $resim = substr($satir->resim,3);
+                        echo "
+                        <div class='swiper-slide'>
+                            <h2>$satir->baslik</h2>
+                            <img src='$resim' id='zoom'>
+                            <a href='travels.php'><input type='submit' value='İncele' name='see' class='btn'></a>
+                        </div>";}?>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
