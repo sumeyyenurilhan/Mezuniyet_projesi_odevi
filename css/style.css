@@ -80,7 +80,6 @@ nav ul li {
     font-size: 1.5rem;
     position: relative;
 }
-
 nav ul li a::before {
     content: '';
     position: absolute;
@@ -97,7 +96,12 @@ nav ul li a {
     color: var(--secondary-color);
     transition: 0.3s ease;
 }
-
+nav ul li a img{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    display: block;
+}
 nav ul li a:hover::before {
     width: 100%;
     padding-bottom: 1px;
@@ -105,15 +109,13 @@ nav ul li a:hover::before {
 
 nav ul li a.active {
     color: var(--border-bg);
-}
-
+}                                                                                                                                                                                                                                                                                          
 #icon {
     cursor: pointer;
     width: 3rem;
 }
 .bar{
     display: none;
-    position:relative;
 }
 .home {
     position: relative;
@@ -967,48 +969,39 @@ footer p {
     .hero header nav {
         padding: 3rem 4rem;
     }
-    .bar:hover nav ul{
-        display: block;
-        position: absolute;
-    }   
-    nav ul li {
-        display: inline-block;
-        list-style: none;
-        padding: 0rem 1rem;
-        font-size: 1.25rem;
+    .dropdown a img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .dropdown > li {
         position: relative;
-        display: none;
+        display: inline-block;
+        margin-bottom: 5rem;
     }
-
-    nav ul li a::before {
-        content: '';
-        position: absolute;
-        background: var(--border-bold);
-        width: 0;
-        height: 3px;
-        bottom: 0;
-        left: 0;
-        transition: 0.3s ease;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: var(--secondary-color);
-        transition: 0.3s ease;
-    }
-
-    nav ul li a:hover::before {
-        width: 100%;
-        padding-bottom: 1px;
+      
+    .dropdown > li > a {
+        padding: 1rem 2rem;
+        display: block;
     }
     .bar{
         display: block;
-        width: 1.5rem;
-        height: 1.5rem;
-        position: absolute;
-        margin-bottom: 5rem;
+        text-decoration: none;
+        border: none;
+        margin-top: 1.70rem;
+        margin-left: 5rem;
+     } 
+    .dropdown > li ul {
+        position: relative;
+        display: none;
+        width: 15rem;
+        margin-top: 3rem;
     }
-    .bar:hover nav ul li{
+      
+    .dropdown > li ul li a {
+        padding: 1rem 1.5rem;
+    }
+      
+    .dropdown > li:hover ul {
         display: block;
     }
     .home .home-box .content {
@@ -1026,7 +1019,7 @@ footer p {
     }
     
     .home .slider-navigation {
-        padding-left: 17.5rem;
+        padding-left: 16.5rem;
     }
     .seasons {
         margin-top: 6rem;

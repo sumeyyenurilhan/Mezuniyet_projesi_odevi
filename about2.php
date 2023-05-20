@@ -23,13 +23,16 @@
         <header class="header">
             <nav class="nav">
                 <a href="home.php" aria-label="home"><img src="images/logo.png" class="logo" alt=""></a>
-                <ul>
-                    <li><a href="home.php">Ana Sayfa</a></li>
-                    <li><a href="about1.php" class="active">Hakkımızda</a></li>
-                    <li><a href="travels.php">Seyahatler</a></li>
-                    <li><a href="contact.php">İletişim</a></li>
+                <ul class="dropdown">
+                    <li><a><img src="images/bar.png" class="bar"></a>
+                        <ul>
+                            <li><a href="home.php">Ana Sayfa</a></li>
+                            <li><a href="about1.php" class="active">Hakkımızda</a></li>
+                            <li><a href="travels.php">Seyahatler</a></li>
+                            <li><a href="contact.php">İletişim</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <a><img src="images/bar.png" class="bar"></a>
                 <img src="images/moon.png" id="icon" alt="">
             </nav>
             <script>
