@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 08 May 2023, 23:03:43
+-- Üretim Zamanı: 23 May 2023, 19:48:23
 -- Sunucu sürümü: 10.4.21-MariaDB
 -- PHP Sürümü: 8.0.11
 
@@ -39,7 +39,7 @@ CREATE TABLE `ek6` (
 --
 
 INSERT INTO `ek6` (`id`, `name`, `image`, `text`) VALUES
-(2, 'Doğu Anadolu Turu', '../images/dogu.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.\r\n<br><br>\r\nErzurum,Kars,Malatya,Ardahan,Ağrı,Muş');
+(3, 'Doğu Anadolu Turu', '../image/dogu.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.<br><br>\r\n\r\nErzurum,Kars,Malatya,Ardahan,Ağrı,Muş');
 
 --
 -- Dökümü yapılmış tablolar için indeksler
@@ -59,7 +59,7 @@ ALTER TABLE `ek6`
 -- Tablo için AUTO_INCREMENT değeri `ek6`
 --
 ALTER TABLE `ek6`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

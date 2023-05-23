@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 08 May 2023, 22:58:36
+-- Üretim Zamanı: 23 May 2023, 19:51:19
 -- Sunucu sürümü: 10.4.21-MariaDB
 -- PHP Sürümü: 8.0.11
 
@@ -44,8 +44,8 @@ INSERT INTO `anasayfa_slider` (`id`, `baslik`, `resim`) VALUES
 (20, 'Amerika Turu', '../images/peru.jpg'),
 (21, 'Rusya Turu', '../images/russia.jpg'),
 (22, 'Yurt İçi Turları', '../images/istanbul.jpg'),
-(23, 'Doğu Ekspress Seyahat', '../images/doğu.jpg'),
-(24, 'Avustralya Turu', '../images/sidney.jpg');
+(25, 'Doğu Ekspress', '../images/doğu.jpg'),
+(26, 'Avustralya Turu', '../images/sidney.jpg');
 
 --
 -- Dökümü yapılmış tablolar için indeksler
@@ -65,7 +65,7 @@ ALTER TABLE `anasayfa_slider`
 -- Tablo için AUTO_INCREMENT değeri `anasayfa_slider`
 --
 ALTER TABLE `anasayfa_slider`
-  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

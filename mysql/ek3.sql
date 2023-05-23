@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 08 May 2023, 23:02:54
+-- Üretim Zamanı: 23 May 2023, 19:48:02
 -- Sunucu sürümü: 10.4.21-MariaDB
 -- PHP Sürümü: 8.0.11
 
@@ -39,7 +39,7 @@ CREATE TABLE `ek3` (
 --
 
 INSERT INTO `ek3` (`id`, `name`, `image`, `text`) VALUES
-(2, 'Avrupa Turu', '../images/almanya.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.\r\n<br><br>\r\nİngiltere,Almanya,İspanya,İtalya,Fransa,Macaristan,İsviçre,Avusturya,Yunanistan,Portekiz');
+(3, 'Avrupa Turu', '../image/almanya.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis.<br> Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.<br><br>\r\n\r\nİngiltere,Almanya,İspanya,İtalya,Fransa,Macaristan,İsviçre,Avusturya,Yunanistan,Portekiz\r\n');
 
 --
 -- Dökümü yapılmış tablolar için indeksler
@@ -59,7 +59,7 @@ ALTER TABLE `ek3`
 -- Tablo için AUTO_INCREMENT değeri `ek3`
 --
 ALTER TABLE `ek3`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

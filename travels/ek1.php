@@ -57,8 +57,9 @@
                 <section class="ekler" id="ekler" data-aos="fade-up">
                     <div class="container">
                     <?php
-                    $sorgu = $baglan->query("select * from ek1");
-                    $satir = $sorgu->fetch_object();
+                        $sorgu = $baglan->query("select * from ek1");
+                        while ($satir = $sorgu->fetch_object()) {
+                        $image = substr($satir->image,3);
                     echo "
                         <div class='image'>
                             <img src='$image'>
@@ -69,7 +70,7 @@
                             <p style'color:white;'>$satir->text</p><br><br>  
                             <a class='btn' href=''>Randevu İçin Whats app Hattımıza mesaj atın.</a>
                         </div>
-                        "; ?>
+                        ";} ?>
                     </div>
                 </section>
             </div>

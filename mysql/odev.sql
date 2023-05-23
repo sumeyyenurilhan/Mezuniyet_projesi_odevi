@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 08 May 2023, 23:20:43
+-- Üretim Zamanı: 23 May 2023, 19:52:19
 -- Sunucu sürümü: 10.4.21-MariaDB
 -- PHP Sürümü: 8.0.11
 
@@ -49,26 +49,6 @@ INSERT INTO `anasayfa_gezig` (`id`, `baslik`, `resim`, `yazi`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `anasayfa_kayanp`
---
-
-CREATE TABLE `anasayfa_kayanp` (
-  `id` int(6) NOT NULL,
-  `baslik` varchar(50) NOT NULL,
-  `dosya` varchar(50) NOT NULL,
-  `yazi` varchar(1000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Tablo döküm verisi `anasayfa_kayanp`
---
-
-INSERT INTO `anasayfa_kayanp` (`id`, `baslik`, `dosya`, `yazi`) VALUES
-(7, 'HİNDİSTAN ZİYARETİMİZ YAKINDA...', '../images/tacmahal.mp4', 'Lorem ipsum dolor sit amet. Sit asperiores ipsa qui impedit omnis eos aperiam magni At doloremque possimus sed similique sint non minus nihil ab reprehenderit consequatur. Et perferendis Quis sed illo asperiores ut facilis alias eos tempora laudantium sed voluptate doloribus ea quaerat expedita non autem autem.');
-
--- --------------------------------------------------------
-
---
 -- Tablo için tablo yapısı `anasayfa_slider`
 --
 
@@ -89,8 +69,8 @@ INSERT INTO `anasayfa_slider` (`id`, `baslik`, `resim`) VALUES
 (20, 'Amerika Turu', '../images/peru.jpg'),
 (21, 'Rusya Turu', '../images/russia.jpg'),
 (22, 'Yurt İçi Turları', '../images/istanbul.jpg'),
-(23, 'Doğu Ekspress Seyahat', '../images/doğu.jpg'),
-(24, 'Avustralya Turu', '../images/sidney.jpg');
+(25, 'Doğu Ekspress', '../images/doğu.jpg'),
+(26, 'Avustralya Turu', '../images/sidney.jpg');
 
 -- --------------------------------------------------------
 
@@ -133,7 +113,7 @@ CREATE TABLE `ek` (
 --
 
 INSERT INTO `ek` (`id`, `name`, `image`, `text`) VALUES
-(5, 'Hindistan Turu', '../images/india.jpg', 'Lorem ipsum dolor sit amet. Est voluptatum voluptatem 33 explicabo esse rem sapiente voluptatem. Est galisum laudantium aut voluptates ratione est consequuntur consequuntur est quaerat asperiores est nemo enim sed fuga voluptatum et enim dicta.\r\n\r\n33 architecto rerum ut nihil perferendis non maiores quis rem laborum internos ad quam sapiente ut dolor similique aut nihil dolorum! Et suscipit tempore aut deleniti illo ad perspiciatis voluptas. A quidem similique aut quibusdam praesentium sed ipsum voluptatum in deserunt molestiae ea deleniti consequatur rem quis officiis. Sit dolores aliquid sed voluptatum eius sed quasi inventore et sunt enim et temporibus facere est libero beatae vel eligendi iure.\r\n\r\nAut quas accusantium aut beatae voluptatem est excepturi suscipit. Aut facilis consectetur ut corrupti dolores vel quibusdam voluptate et dolor voluptas eos dolor eius et voluptate vitae et sapiente saepe? Et obcaecati maiores sed repudiandae error sed sapiente nemo non maxime nulla qui omnis internos non quod sint.');
+(7, 'Hindistan Turu', '../image/india.jpg', 'Lorem ipsum dolor sit amet. Est voluptatum voluptatem 33 explicabo esse rem sapiente voluptatem. Est galisum laudantium aut voluptates ratione est consequuntur consequuntur est quaerat asperiores est nemo enim sed fuga voluptatum et enim dicta. 33 architecto rerum ut nihil perferendis non maiores quis rem laborum internos ad quam sapiente ut dolor similique aut nihil dolorum! Et suscipit tempore aut deleniti illo ad perspiciatis voluptas. A quidem similique aut quibusdam praesentium sed ipsum voluptatum in deserunt molestiae ea deleniti consequatur rem quis officiis. Sit dolores aliquid sed voluptatum eius sed quasi inventore et sunt enim et temporibus facere est libero beatae vel eligendi iure. Aut quas accusantium aut beatae voluptatem est excepturi suscipit. Aut facilis consectetur ut corrupti dolores vel quibusdam voluptate et dolor voluptas eos dolor eius et voluptate vitae et sapiente saepe? Et obcaecati maiores sed repudiandae error sed sapiente nemo non maxime nulla qui omnis internos non quod sint.\r\n');
 
 -- --------------------------------------------------------
 
@@ -153,7 +133,7 @@ CREATE TABLE `ek1` (
 --
 
 INSERT INTO `ek1` (`id`, `name`, `image`, `text`) VALUES
-(5, 'Akdeniz Turu', '../images/ak.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.\r\n<br><br>\r\nİzmir,Muğla,Aydın,Uşak,Çanakkale,Burdur');
+(10, 'Akdeniz Turu', '../image/ak.jpg', 'Lorem Ipsum Dolor Sit Amet. Eos Consequuntur Tempora At Dolor Eaque Non Ducimus Aliquam. Et Amet Aperiam Vel Nostrum Voluptatum Aut Consequatur Sint Qui Esse Rerum A Doloremque Neque Ea Enim Doloremque. Et Earum Impedit Qui Labore Explicabo Qui Quod Quidem. Ut Nesciunt Quidem Est Eveniet Molestias Ut Modi Fugiat Sed Saepe Debitis. Qui Culpa Expedita Aut Asperiores Error Qui Omnis Nostrum Nam Illo Autem Sed Animi Veritatis In Corporis Fuga Est Fugiat Quam. Ad Soluta Quasi Ab Error Sunt Sit Alias Modi Eum Veniam Repellat! Est Aperiam Ipsam Non Nostrum Placeat Sit Velit Iste! A Nisi Dolorum Vel Dolore Enim Et Omnis Facilis Ab Iure Maxime Qui Perspiciatis Eligendi Aut Mollitia Minima. \r\n\r\nİzmir,Muğla,Aydın,Uşak,Çanakkale,Burdur');
 
 -- --------------------------------------------------------
 
@@ -173,7 +153,7 @@ CREATE TABLE `ek2` (
 --
 
 INSERT INTO `ek2` (`id`, `name`, `image`, `text`) VALUES
-(2, 'Amerika Turu', 'images/kolombiya.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
+(3, 'Amerika Turu', '../image/kolombiya.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.\r\n');
 
 -- --------------------------------------------------------
 
@@ -193,7 +173,7 @@ CREATE TABLE `ek3` (
 --
 
 INSERT INTO `ek3` (`id`, `name`, `image`, `text`) VALUES
-(2, 'Avrupa Turu', '../images/almanya.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.\r\n<br><br>\r\nİngiltere,Almanya,İspanya,İtalya,Fransa,Macaristan,İsviçre,Avusturya,Yunanistan,Portekiz');
+(3, 'Avrupa Turu', '../image/almanya.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis.<br> Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.<br><br>\r\n\r\nİngiltere,Almanya,İspanya,İtalya,Fransa,Macaristan,İsviçre,Avusturya,Yunanistan,Portekiz\r\n');
 
 -- --------------------------------------------------------
 
@@ -213,7 +193,7 @@ CREATE TABLE `ek4` (
 --
 
 INSERT INTO `ek4` (`id`, `name`, `image`, `text`) VALUES
-(1, 'Avustralya Turu', '../images/sidney.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
+(2, 'Avustralya Turu', '../image/sidney.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
 
 -- --------------------------------------------------------
 
@@ -233,7 +213,7 @@ CREATE TABLE `ek5` (
 --
 
 INSERT INTO `ek5` (`id`, `name`, `image`, `text`) VALUES
-(1, 'Çin Bahar Festivali', '../images/cinbaharı.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
+(2, 'Çin Bahar Festivali', '../image/cin.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
 
 -- --------------------------------------------------------
 
@@ -253,7 +233,7 @@ CREATE TABLE `ek6` (
 --
 
 INSERT INTO `ek6` (`id`, `name`, `image`, `text`) VALUES
-(2, 'Doğu Anadolu Turu', '../images/dogu.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.\r\n<br><br>\r\nErzurum,Kars,Malatya,Ardahan,Ağrı,Muş');
+(3, 'Doğu Anadolu Turu', '../image/dogu.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.<br><br>\r\n\r\nErzurum,Kars,Malatya,Ardahan,Ağrı,Muş');
 
 -- --------------------------------------------------------
 
@@ -273,7 +253,7 @@ CREATE TABLE `ek7` (
 --
 
 INSERT INTO `ek7` (`id`, `name`, `image`, `text`) VALUES
-(1, 'Doğu Ekspres Seyahati', '../images/doğu.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
+(2, 'Doğu Ekspres Seyahati', '../image/doğu.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
 
 -- --------------------------------------------------------
 
@@ -293,7 +273,7 @@ CREATE TABLE `ek8` (
 --
 
 INSERT INTO `ek8` (`id`, `name`, `image`, `text`) VALUES
-(1, 'Ege Turu', '../images/ege.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.\r\n<br><br>\r\nİzmir,Muğla,Uşak,Aydın,Denizli,Afyon');
+(2, 'Ege Turu', '../image/ege.jpg', '\r\nLorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.<br><br>\r\n\r\nİzmir,Muğla,Uşak,Aydın,Denizli,Afyon');
 
 -- --------------------------------------------------------
 
@@ -313,7 +293,7 @@ CREATE TABLE `ek9` (
 --
 
 INSERT INTO `ek9` (`id`, `name`, `image`, `text`) VALUES
-(1, 'Endonezya Gemi Seyahati', '../images/bali.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
+(2, 'Endonezya Gemi Seyahati', '../image/bali.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
 
 -- --------------------------------------------------------
 
@@ -333,7 +313,7 @@ CREATE TABLE `ek10` (
 --
 
 INSERT INTO `ek10` (`id`, `name`, `image`, `text`) VALUES
-(1, 'Fas Yaz Turu', '../images/fas.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
+(2, 'Fas Turu', '../image/fas.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
 
 -- --------------------------------------------------------
 
@@ -353,7 +333,7 @@ CREATE TABLE `ek11` (
 --
 
 INSERT INTO `ek11` (`id`, `name`, `image`, `text`) VALUES
-(1, 'Güneydoğu Anadolu Turu', '../images/guney.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.\r\n<br><br>\r\nMardin,Şanlıurfa,Gaziantep,Kahramanmaraş,Adıyaman,Diyarbakır');
+(2, 'Güneydoğu Anadolu Turu', '../image/guney.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.<br><br>\r\n\r\nMardin,Şanlıurfa,Gaziantep,Kahramanmaraş,Adıyaman,Diyarbakır\r\n');
 
 -- --------------------------------------------------------
 
@@ -373,7 +353,7 @@ CREATE TABLE `ek12` (
 --
 
 INSERT INTO `ek12` (`id`, `name`, `image`, `text`) VALUES
-(1, 'İç Anadolu Turu', '../images/ic.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.\r\n<br><br>\r\nAnakara,Nevşehir,Kayseri,Sivas,Konya,Eskişehir');
+(2, 'İç Anadolu Turu', '../image/ic.jpg', '\r\nLorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.<br><br>\r\n\r\nAnakara,Nevşehir,Kayseri,Sivas,Konya,Eskişehir\r\n');
 
 -- --------------------------------------------------------
 
@@ -393,7 +373,7 @@ CREATE TABLE `ek13` (
 --
 
 INSERT INTO `ek13` (`id`, `name`, `image`, `text`) VALUES
-(1, 'Kanada Bahar Festivali', '../images/kanada.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
+(2, 'Kanada Bahar Festivali', '../image/kanada.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
 
 -- --------------------------------------------------------
 
@@ -413,7 +393,7 @@ CREATE TABLE `ek14` (
 --
 
 INSERT INTO `ek14` (`id`, `name`, `image`, `text`) VALUES
-(1, 'Karadeniz Turu', '../images/kara.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.\r\n<br><br>\r\nRize,Trabzon,Giresun,Artvin,Samsun,Zonguldak');
+(2, 'Karadeniz Turu', '../image/kara.jpg', '\r\nLorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.<br><br>\r\n\r\nRize,Trabzon,Giresun,Artvin,Samsun,Zonguldak\r\n');
 
 -- --------------------------------------------------------
 
@@ -433,7 +413,7 @@ CREATE TABLE `ek15` (
 --
 
 INSERT INTO `ek15` (`id`, `name`, `image`, `text`) VALUES
-(1, 'Karayipler Gemi Seyahati', '../images/caribbean.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
+(2, 'Karayipler Gemi Seyahati', '../image/caribbean.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
 
 -- --------------------------------------------------------
 
@@ -453,7 +433,7 @@ CREATE TABLE `ek16` (
 --
 
 INSERT INTO `ek16` (`id`, `name`, `image`, `text`) VALUES
-(1, 'Maldivler Gemi Seyahati', '../images/maldiv.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
+(2, 'Maldivler Gemi Seyahati', '../image/maldiv.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
 
 -- --------------------------------------------------------
 
@@ -473,7 +453,7 @@ CREATE TABLE `ek17` (
 --
 
 INSERT INTO `ek17` (`id`, `name`, `image`, `text`) VALUES
-(1, 'Marmara Turu', '../images/istanbul.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.\r\n<br><br>\r\nİstanbul,Bursa,Balıkesir,Çanakkale,Edirne,Kocaeli');
+(2, 'Marmara Turu', '../image/istanbul.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.<br><br>\r\n\r\nİstanbul,Bursa,Balıkesir,Çanakkale,Edirne,Kocaeli\r\n');
 
 -- --------------------------------------------------------
 
@@ -493,7 +473,7 @@ CREATE TABLE `ek18` (
 --
 
 INSERT INTO `ek18` (`id`, `name`, `image`, `text`) VALUES
-(1, 'Norveç Kış Seyahati', '../images/norvec.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
+(2, 'Norveç Seyahati', '../image/norvec.jpg', '\r\nLorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
 
 -- --------------------------------------------------------
 
@@ -513,7 +493,7 @@ CREATE TABLE `ek19` (
 --
 
 INSERT INTO `ek19` (`id`, `name`, `image`, `text`) VALUES
-(1, 'Rusya Turu', '../images/russia.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
+(2, 'Rusya Turu', '../image/russia.jpg', '\r\nLorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
 
 -- --------------------------------------------------------
 
@@ -533,7 +513,7 @@ CREATE TABLE `ek20` (
 --
 
 INSERT INTO `ek20` (`id`, `name`, `image`, `text`) VALUES
-(1, 'Safari Yaz Turu', '../images/safari.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
+(2, 'Safari Yaz Turu', '../image/safari.jpg', '\r\nLorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.');
 
 -- --------------------------------------------------------
 
@@ -553,7 +533,7 @@ CREATE TABLE `ek21` (
 --
 
 INSERT INTO `ek21` (`id`, `name`, `image`, `text`) VALUES
-(1, 'Uzak Doğu Turu', '../images/kore.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.\r\n<br><br>\r\nGüney Kore,Çin,Tayland,Japonya,Sngapur,Malezya,Filipinler,Endonezya');
+(2, 'Uzak Doğu Turu', '../image/kore.jpg', 'Lorem ipsum dolor sit amet. Eos consequuntur tempora At dolor eaque non ducimus aliquam. Et amet aperiam vel nostrum voluptatum aut consequatur sint qui esse rerum a doloremque neque ea enim doloremque. Et earum impedit qui labore explicabo qui quod quidem. Ut nesciunt quidem est eveniet molestias ut modi fugiat sed saepe debitis. Qui culpa expedita aut asperiores error qui omnis nostrum nam illo autem sed animi veritatis in corporis fuga est fugiat quam. Ad soluta quasi ab error sunt sit alias modi eum veniam repellat! Est aperiam ipsam non nostrum placeat sit velit iste! A nisi dolorum vel dolore enim et omnis facilis ab iure maxime qui perspiciatis eligendi aut mollitia minima.<br><br>\r\n\r\nGüney Kore,Çin,Tayland,Japonya,Sngapur,Malezya,Filipinler,Endonezya\r\n');
 
 -- --------------------------------------------------------
 
@@ -680,12 +660,6 @@ INSERT INTO `seyahatler` (`id`, `name`, `image`, `comment`, `link`, `file`) VALU
 -- Tablo için indeksler `anasayfa_gezig`
 --
 ALTER TABLE `anasayfa_gezig`
-  ADD PRIMARY KEY (`id`);
-
---
--- Tablo için indeksler `anasayfa_kayanp`
---
-ALTER TABLE `anasayfa_kayanp`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -873,16 +847,10 @@ ALTER TABLE `anasayfa_gezig`
   MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- Tablo için AUTO_INCREMENT değeri `anasayfa_kayanp`
---
-ALTER TABLE `anasayfa_kayanp`
-  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
---
 -- Tablo için AUTO_INCREMENT değeri `anasayfa_slider`
 --
 ALTER TABLE `anasayfa_slider`
-  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `contact_form`
@@ -894,133 +862,133 @@ ALTER TABLE `contact_form`
 -- Tablo için AUTO_INCREMENT değeri `ek`
 --
 ALTER TABLE `ek`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek1`
 --
 ALTER TABLE `ek1`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek2`
 --
 ALTER TABLE `ek2`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek3`
 --
 ALTER TABLE `ek3`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek4`
 --
 ALTER TABLE `ek4`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek5`
 --
 ALTER TABLE `ek5`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek6`
 --
 ALTER TABLE `ek6`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek7`
 --
 ALTER TABLE `ek7`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek8`
 --
 ALTER TABLE `ek8`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek9`
 --
 ALTER TABLE `ek9`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek10`
 --
 ALTER TABLE `ek10`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek11`
 --
 ALTER TABLE `ek11`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek12`
 --
 ALTER TABLE `ek12`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek13`
 --
 ALTER TABLE `ek13`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek14`
 --
 ALTER TABLE `ek14`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek15`
 --
 ALTER TABLE `ek15`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek16`
 --
 ALTER TABLE `ek16`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek17`
 --
 ALTER TABLE `ek17`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek18`
 --
 ALTER TABLE `ek18`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek19`
 --
 ALTER TABLE `ek19`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek20`
 --
 ALTER TABLE `ek20`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `ek21`
 --
 ALTER TABLE `ek21`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `hakkimizda1`

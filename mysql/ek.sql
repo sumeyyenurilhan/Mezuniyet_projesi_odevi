@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 08 May 2023, 23:02:13
+-- Üretim Zamanı: 23 May 2023, 19:47:35
 -- Sunucu sürümü: 10.4.21-MariaDB
 -- PHP Sürümü: 8.0.11
 
@@ -39,7 +39,7 @@ CREATE TABLE `ek` (
 --
 
 INSERT INTO `ek` (`id`, `name`, `image`, `text`) VALUES
-(5, 'Hindistan Turu', '../images/india.jpg', 'Lorem ipsum dolor sit amet. Est voluptatum voluptatem 33 explicabo esse rem sapiente voluptatem. Est galisum laudantium aut voluptates ratione est consequuntur consequuntur est quaerat asperiores est nemo enim sed fuga voluptatum et enim dicta.\r\n\r\n33 architecto rerum ut nihil perferendis non maiores quis rem laborum internos ad quam sapiente ut dolor similique aut nihil dolorum! Et suscipit tempore aut deleniti illo ad perspiciatis voluptas. A quidem similique aut quibusdam praesentium sed ipsum voluptatum in deserunt molestiae ea deleniti consequatur rem quis officiis. Sit dolores aliquid sed voluptatum eius sed quasi inventore et sunt enim et temporibus facere est libero beatae vel eligendi iure.\r\n\r\nAut quas accusantium aut beatae voluptatem est excepturi suscipit. Aut facilis consectetur ut corrupti dolores vel quibusdam voluptate et dolor voluptas eos dolor eius et voluptate vitae et sapiente saepe? Et obcaecati maiores sed repudiandae error sed sapiente nemo non maxime nulla qui omnis internos non quod sint.');
+(7, 'Hindistan Turu', '../image/india.jpg', 'Lorem ipsum dolor sit amet. Est voluptatum voluptatem 33 explicabo esse rem sapiente voluptatem. Est galisum laudantium aut voluptates ratione est consequuntur consequuntur est quaerat asperiores est nemo enim sed fuga voluptatum et enim dicta. 33 architecto rerum ut nihil perferendis non maiores quis rem laborum internos ad quam sapiente ut dolor similique aut nihil dolorum! Et suscipit tempore aut deleniti illo ad perspiciatis voluptas. A quidem similique aut quibusdam praesentium sed ipsum voluptatum in deserunt molestiae ea deleniti consequatur rem quis officiis. Sit dolores aliquid sed voluptatum eius sed quasi inventore et sunt enim et temporibus facere est libero beatae vel eligendi iure. Aut quas accusantium aut beatae voluptatem est excepturi suscipit. Aut facilis consectetur ut corrupti dolores vel quibusdam voluptate et dolor voluptas eos dolor eius et voluptate vitae et sapiente saepe? Et obcaecati maiores sed repudiandae error sed sapiente nemo non maxime nulla qui omnis internos non quod sint.\r\n');
 
 --
 -- Dökümü yapılmış tablolar için indeksler
@@ -59,7 +59,7 @@ ALTER TABLE `ek`
 -- Tablo için AUTO_INCREMENT değeri `ek`
 --
 ALTER TABLE `ek`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

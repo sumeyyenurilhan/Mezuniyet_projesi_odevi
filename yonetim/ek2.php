@@ -13,7 +13,7 @@
 
     if ($islem == "ekle") {
         $name = $_POST["name"];
-        $image = "images/".$_FILES["image"]["name"];
+        $image = "image/".$_FILES["image"]["name"];
         move_uploaded_file($_FILES["image"]["tmp_name"], $image);
         $text = $_POST["text"];
         $sorgu = $baglan->query("insert into ek2 (name,image,text) values ('$name','../$image','$text')");
