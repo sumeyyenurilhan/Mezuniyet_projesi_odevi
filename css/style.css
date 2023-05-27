@@ -851,7 +851,10 @@ footer p {
     justify-content: center;
     margin-top: 7rem;
 }
-
+.ekler .container .image img{
+    width: 6rem;
+    height: 6rem;
+}
 
 .ekler .container .contents {
     padding: 2rem;
