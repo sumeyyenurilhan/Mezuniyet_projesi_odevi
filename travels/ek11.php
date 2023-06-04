@@ -30,7 +30,7 @@
             <nav class="nav">
                 <a href="../home.php" aria-label="home"><img src="../images/logo.png" class="logo" alt=""></a>
                 <ul class="dropdown">
-                    <li><a><img src="images/bar.png" class="bar"></a>
+                    <li><a><img src="../images/bar.png" class="bar"></a>
                         <ul>
                             <li><a href="../home.php">Ana Sayfa</a></li>
                             <li><a href="../about1.php">Hakkımızda</a></li>
