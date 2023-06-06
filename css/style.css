@@ -48,15 +48,14 @@
     background-color: var(--primary-color);
     min-height: 100vh;
 }
-
-.hero header {
+.header {
     width: 100%;
     align-items: center;
     justify-content: space-between;
     z-index: 999;
 }
 
-.hero header nav {
+.header nav {
     position: fixed;
     z-index: 10001;
     width: 100%;
@@ -69,7 +68,7 @@
     background-color: var(--border-light);
 }
 
-.hero .header .logo {
+.header .logo {
     cursor: pointer;
 }
 
@@ -818,14 +817,12 @@ footer p {
     align-items: center;
     margin-left: 6.75rem;
 }
-
 .ekler {
     align-items: center;
     justify-content: center;
     width: 70%;
-    min-height: 40rem;
-    margin-top: 12rem;
-    margin-bottom: 2rem;
+    min-height: 45rem;
+    margin-top: 15rem;
     background: #00262ac2;
     position: center;
     margin-left: 18rem;
@@ -835,26 +832,21 @@ footer p {
 
 .ekler .container {
     display: grid;
-    grid-template-columns: 40rem auto;
+    grid-template-columns: 25rem auto;
     padding: 3rem;
 }
 
 .ekler .container .image {
-    align-items: center;
     border: var(--border-bg);
-    height: 100%;
-    width: 20rem;
     border-right: solid;
     border-bottom: none;
     border-left: none;
     border-top: none;
-    align-items: center;
-    justify-content: center;
-    margin-top: 7rem;
+    margin-top: 8rem;
 }
 .ekler .container .image img{
-    width: 6rem;
-    height: 6rem;
+    width: 22rem;
+    height: 22rem;
 }
 
 .ekler .container .contents {
@@ -999,16 +991,19 @@ footer p {
         position: absolute;
         display: none;
         width: 15rem;
-        margin-top: 3rem;
+        margin-top: 5rem;
         top: 0;
     }
       
     .dropdown > li ul li a {
-        padding: 1rem 1.5rem;
+        padding: 1.5rem 1.5rem;
     }
       
     .dropdown > li:hover ul {
         display: block;
+    }
+    .dropdown > li:hover .bar{
+        display: none;
     }
     .home .home-box .content {
         margin: 28rem 5.5rem;
