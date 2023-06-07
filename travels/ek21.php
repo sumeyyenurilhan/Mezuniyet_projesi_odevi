@@ -69,7 +69,7 @@
                             <h2>$satir->name</h2><br>
                             <hr class='hr'><br><br>
                             <p style'color:white;'>$satir->text</p><br><br>  
-                            <a class='btn' href=''>Randevu İçin Whats app Hattımıza mesaj atın.</a>
+                            <a class='btn' href=''>Randevu İçin Whats app Hattımıza mesaj yazın.</a>
                         </div>
                         ";} ?>
                     </div>
